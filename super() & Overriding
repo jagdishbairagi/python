@@ -9,6 +9,7 @@ class B(A):
     classvar1 = "I am in class B"
 
     def __init__(self):
+        super().__init__()
         self.var1 = "I am inside class B's constructor"
         self.classvar1 = "Instance var in class B"
         # super().__init__()
