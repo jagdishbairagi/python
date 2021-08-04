@@ -1,0 +1,33 @@
+
+class Student:
+    no_of_leaves = 10
+    def printdetails(self):
+        print(f"Name is {self.name}, Salary is {self.salary}")
+
+    def __init__(self, aname, asalary):
+        self.name = aname
+        self.salary = asalary
+
+class player:
+    def __init__(self, name, game):
+        self.name = name
+        self.game = game
+
+    def printdetailsp(self):
+        print(f"My name is {self.name} and I play {self.game}")
+
+class coolprogrammer(Student, player):
+    def __init__(self, aname, asalary, game, language):
+        self.name = aname
+        self.salary = asalary
+        self.game = game
+        self.language = language
+    def printlanguage(self):
+        print(self.language)
+
+harry = Student("Harry", 240)
+rohan = Student("Rohan", 250)
+
+karan = coolprogrammer("Karan", 6789, "Cricket", "Python")
+
+karan.printlanguage()
